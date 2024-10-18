@@ -1,7 +1,8 @@
 :root {
-    --verdoso:  #66866d;
+    --verdoso: #66866d;
     --brancoso: #c4c9d7;
     --vermelhoso: #86282c;
+    --amarelo-promocao: #FFD700;
 }
 
 body {
@@ -19,6 +20,55 @@ body {
     padding: 5px;
     margin: 5px;
 }
+
+.promo_container {
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+
+.old_price {
+    text-decoration: line-through;
+    color: var(--brancoso);
+    margin-right: 10px;
+}
+
+.new_price {
+    color: var(--vermelhoso);
+    font-weight: bold;
+}
+
+.text_cinza{
+    max-width: 400px;
+    text-align: justify;
+    position: relative;
+
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.cta_button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: var(--vermelhoso);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+.cta_button:hover {
+    background-color: var(--brancoso);
+    color: var(--vermelhoso);
+}
+
 
 .image_container {
     position: relative;
@@ -38,33 +88,65 @@ body {
     border-radius: 8px;
 }
 
-.text_above_image {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 18px;
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
-    padding: 10px;
-    border-radius: 5px;
-}
-
 .text_below_image {
+    font-size: 21px;
+    letter-spacing: 2px;
     margin-top: 20px;
     text-align: justify;
     color: var(--brancoso);
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    max-width: 600px;
 }
 
-/* Responsivo */
+#timer_container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.timer_text {
+    color: var(--brancoso);
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.timer_display {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--vermelhoso);
+}
+
+
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--brancoso);
+    padding: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: var(--vermelhoso);
+    border-radius: 4px;
+}
+
+
 @media screen and (max-width: 420px) {
     .image_container {
         width: 300px;
         height: 300px;
     }
+    
+    .promo_container {
+        font-size: 16px;
+    }
 
-    .text_above_image {
-        font-size: 14px;
+    .cta_button {
+        padding: 10px 20px;
+        font-size: 16px;
     }
 }

@@ -1,0 +1,66 @@
+:root {
+
+    --verdoso:  #66866d;
+    --brancoso: #c4c9d7;
+    --vermelhoso: #86282c;
+
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #66866d;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.red_section{
+    background-color: var(--vermelhoso);
+    height: 33vh;
+    width: 100%;
+}
+
+.green_section{
+    background-color: var(--verdoso);
+    height: 33vh;
+    width: 100%;
+}
+
+.white_section{
+    background-color: var(--brancoso);
+    height: 33vh;
+    width: 100%;
+}
+
+.titles{
+    font-size: 15px;
+    color: var(--brancoso);
+    
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.img_container{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+
+    border: 1px solid #c4c9d7;
+    border-radius: 8px;
+
+    box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.75);
+
+
+    justify-content: center;
+    align-items: center;
+    background: url(../img/imgcapa.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

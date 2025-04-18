@@ -1,5 +1,5 @@
 // Define a data e hora de início da oferta (28/10/2024 às 18:30)
-const offerStartTime = new Date('2025-02-21T18:00:00').getTime();
+const offerStartTime = new Date('2025-04-18T17:45:00').getTime();
 
 // Define o tempo da oferta (48 horas em milissegundos)
 const offerDuration = 48 * 60 * 60 * 1000;  // 48 horas
